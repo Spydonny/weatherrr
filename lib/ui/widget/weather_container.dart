@@ -16,7 +16,7 @@ class WeatherContainer extends StatelessWidget {
 
     return Center(
       child: Container(
-        height: screenHeight*0.22 ,
+        height: screenHeight*0.25 ,
         width: screenWidth*0.85,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),

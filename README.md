@@ -1,16 +1,54 @@
- weatherrr
+# weatherrr
 
-A new Flutter project.
+A cross-platform weather forecast app built with Flutter and Dart.
+
+## Features
+
+- Current weather conditions — temperature, humidity, wind speed, and description
+- Weather icons and visual indicators for different conditions
+- Cross-platform — runs on Android, iOS, Linux, macOS, Windows, and Web
+- Clean, responsive UI
+
+## Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Flutter | Cross-platform UI framework |
+| Dart | Programming language |
+| Android / iOS | Primary mobile targets |
+| Linux / macOS / Windows | Desktop targets |
+| Web | Browser target |
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+```bash
+# Install dependencies
+flutter pub get
 
-A few resources to get you started if this is your first Flutter project:
+# Run on connected device or emulator
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Build for Android
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter build apk --release
+```
+
+### Build for iOS
+
+```bash
+flutter build ios --release
+```
+
+## Project Structure
+
+```
+lib/
+  main.dart               # App entry point
+  weather_container.dart  # Main weather UI widget
+android/                  # Android config
+ios/                      # iOS config
+web/                      # Web config
+linux/ macos/ windows/    # Desktop configs
+```
